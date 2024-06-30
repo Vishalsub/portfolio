@@ -1,40 +1,97 @@
 import React from 'react';
+import projects1 from "../assets/project_1.png"
+import projects2 from "../assets/project-2.png"
+import projects3 from "../assets/project-3.png"
+import arrow from '../assets/arrow.png'
 
 function Projects() {
   return (
     <section id="projects">
-      <p className="section__text__p1">Browse My</p>
-      <h1 className="title">Projects</h1>
-      <div className="project-details-container">
-        <div className="about-containers">
-          <div className="project-container">
-            <div className="details-container">
-              <img src="./assets/robotics.png" alt="Experience icon" className="icon" />
-              <h3>Mobile Robotics</h3>
-              <p>Mobile robotics focuses on the development and control of robots that can move and navigate in various environments. These robots are equipped with sensors and actuators to perceive and interact with their surroundings. Mobile robotics finds applications in fields such as autonomous vehicles, drone navigation, warehouse automation, and exploration of hazardous environments.</p>
-              <div className="btn-container">
-                <button className="btn btn-color-1" onClick={() => window.open('https://github.com/Vishalsub/TARS-ROS2')}>
-                  Check it out
-                </button>
-              </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={projects1}
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
             </div>
           </div>
-          <div className="project-container">
-            <div className="details-container">
-              <img src="./assets/cloud.png" alt="Experience icon" className="icon" />
-              <h3>Cloud Robotics</h3>
-              <p>Cloud robotics involves integrating cloud computing technologies with robotic systems. It leverages the power of cloud-based services for tasks such as data storage, processing, and machine learning, enabling robots to offload computationally intensive operations and access vast amounts of information. This approach enhances the capabilities and scalability of robotic systems, allowing them to perform complex tasks and collaborate seamlessly across different locations.</p>
-              <div className="btn-container">
-                <button className="btn btn-color-1" onClick={() => window.open('https://github.com/Vishalsub/CloudRobotics')}>
-                  Check it out
-                </button>
-              </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={projects2}
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={projects3}
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href='#contact'} />
-    </section>
+      <img
+        src={arrow}
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+      </section>
   );
 }
 

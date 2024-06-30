@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import email from "../assets/email.png"
+import linkdein from '../assets/linkedin.png'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,14 +22,26 @@ function Contact() {
 
   return (
     <section id="contact">
-      <p className="section__text__p1">Connect With Me</p>
-      <h1 className="title">Contact</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <input type="text" id="name" name="name" value={formData.name} placeholder="Full Name" onChange={handleChange} required />
-        <input type="email" id="email" name="email" value={formData.email} placeholder="Email" onChange={handleChange} required />
-        <textarea id="message" name="message" value={formData.message} placeholder="Message" onChange={handleChange} required />
-        <button type="submit" className="btn btn-color-1">Submit</button>
-      </form>
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src={email}
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src={linkdein}
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
     </section>
   );
 }

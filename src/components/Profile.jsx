@@ -1,5 +1,5 @@
 import React from 'react';
-import profile from '../assets/profile-pic.png';
+import profile from '../assets/about-pic2.png';
 import linkedin from '../assets/linkedin.png';
 import github from '../assets/github.png';
 function Profile() {

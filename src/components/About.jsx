@@ -1,6 +1,7 @@
 import React from 'react';
 import profile from '../assets/about-pic1.png';
-
+import Experience from "../assets/experience.png";
+import arrow from '../assets/arrow.png'
 
 function About() {
   return (
@@ -14,12 +15,12 @@ function About() {
         <div className="about-details-container">
           <div className="about-containers">
             <div className="details-container">
-              <img src="./assets/experience.png" alt="Experience icon" className="icon" />
+              <img src={Experience} alt="Experience icon" className="icon" />
               <h3>Experience</h3>
               <p>six month <br />Robotic Enginner Intern</p>
             </div>
             <div className="details-container">
-              <img src="./assets/education.png" alt="Education icon" className="icon" />
+              <img src={Experience} alt="Education icon" className="icon" />
               <h3>Education</h3>
               <p>B.E Mechatronics<br /></p>
             </div>
@@ -36,7 +37,7 @@ function About() {
           </div>
         </div>
       </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" className="icon arrow" onClick={() => window.location.href='#experience'} />
+      <img src={arrow} alt="Arrow icon" className="icon arrow" onClick={() => window.location.href='#experience'} />
     </section>
   );
 }
